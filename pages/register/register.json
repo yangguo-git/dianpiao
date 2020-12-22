@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#6058fd",
+  "navigationBarTitleText": "电票微助手",
+  "usingComponents": {
+    "copyRight": "../../components/common"}
+}

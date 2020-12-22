@@ -1,0 +1,86 @@
+/* pages/replace/replace.wxss */
+page{
+  background: white;
+  font-size: 32rpx;
+}
+.sweep_code_bg{
+  padding: none;
+  margin: none;
+  line-height:1.5;
+  background: none;
+  text-align: left;
+}
+
+.copy-right {
+  font-size: 26rpx;
+  color: #459ad6;
+  padding-top: 40rpx;
+  top: 30rpx;
+  position: relative;
+  bottom: 0rpx;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.sweep_code_bg::after {
+  border: none;
+}
+.sweep_code_bg{
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 30rpx;
+  background: #F7F7F7;
+  padding-bottom: 60rpx;
+}
+.sweep_code{
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -50rpx;
+  margin-top: 80rpx;
+}
+.sweep_code_txt{
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  width: 260rpx;
+  left: 50%;
+  margin-left: -130rpx;
+  position: relative;
+}
+.code_block{
+  width: 92%;
+  border-radius: 10rpx;
+  margin-left: 4%;
+  background: #F7F7F7;
+  margin-top: 60rpx;
+  padding-top: 10rpx;
+  padding-bottom: 6rpx;
+}
+.code_txt{
+  margin-top: 6rpx;
+}
+.flex_row{
+  width: 84%;
+  margin-left: 5%;
+}
+.bor_bottom{
+  padding: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.bor_bottom2{
+  padding: 20rpx;
+}
+input{
+  margin-left: 60rpx;
+}
+.replace_btn{
+  margin-top: 50rpx;
+  width: 90%;
+}
+.replace_btn::after {
+  border: none;
+}

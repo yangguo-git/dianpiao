@@ -1,0 +1,104 @@
+/* pages/accountManager/submit_succ/submit_succ.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.bg {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.btn_share{
+  padding: none;
+  margin: none;
+  line-height:1.5;
+  background: none;
+  text-align: left;
+  position: absolute;
+  top: -20rpx;
+  right: 20rpx;
+  height: 84rpx;
+  width: 80rpx;
+}
+button::after {
+  border: none;
+}
+.share {
+  position: relative;
+  top: 10rpx;
+  right: 10rpx;
+  height: 54rpx;
+  width: 50rpx;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.block {
+  z-index: 2;
+  position: relative;
+  -moz-box-shadow: 2px 2px 15px #dcdbbc;
+  -webkit-box-shadow: 2px 2px 15px #dcdbbc;
+  box-shadow: 2px 2px 15px #dcdbbc;
+  text-align: center;
+  margin-top: 120rpx;
+  width: 76%;
+  margin-left: 12%;
+  border-radius: 30rpx;
+  background: rgb(250, 249, 231);
+}
+
+.head {
+  height: 100rpx;
+  width: 100rpx;
+  top: 40rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  margin-left: -50rpx;
+}
+.txt1 {
+  color: red;
+  margin-top: 60rpx;
+}
+
+.txt2 {
+  margin-top: 10rpx;
+}
+
+.txt3 {
+  font-size: 200rpx;
+  color: red;
+}
+
+.txt3 text {
+  font-size: 60rpx;
+}
+
+.txt4 {
+  font-size: 30rpx;
+  height: 100rpx;
+}
+
+button {
+  border-radius: 20rpx;
+  background: #96ad70;
+  color: white;
+  width: 460rpx;
+  margin-top: 40rpx;
+
+}
+scroll-view{
+  height: 100%
+}
+.companey-phon2 {
+  margin-top: 30rpx;
+  z-index: 3rpx;
+  font-size: 28rpx;
+  position: relative;
+  text-align: center;
+  color: #459ad6;
+}

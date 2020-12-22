@@ -1,0 +1,59 @@
+<block wx:if='{{show}}'>
+	<view class='centent'>
+		<button class='copy_btn' catchtap='copy_companyId'></button>
+		<image class='copy' src='/img/copy.png'></image>
+		<view class='title'>{{mchName}}</view>
+		<view class='code_1'>企业ID
+			<text class='txt'>{{companyId}}</text>
+		</view>
+		<view class='code_2'>注册码
+			<text class='txt'>{{registerId}}</text>
+		</view>
+	</view>
+
+	<view class='process'>
+		<view class='process_title'>申办流程</view>
+		<view wx:for='{{statusList}}' wx:key='key'>
+			<view class='flex_row'>
+				<!-- <view class='idx' style='{{item.status==1?"":"background: #d0d0d0;"}}'>{{item.index}}</view> -->
+				<image class='idx' src='/img/{{item.status==1?"true":"false"}}.png'></image>
+				<view class='detail'>{{item.desc}}</view>
+			</view>
+		</view>
+	</view>
+	<block wx:if='{{btn_show}}'>
+		<block wx:if='{{status>=2}}'>
+			<button class='btn' wx:if='{{redBagStatus||firstRedBagStatus == 0||firstRedBagStatus == 1||secondRedBagStatus == 0||secondRedBagStatus == 1}}' catchtap='redPacket'>领取现金红包</button>
+			<button class='btn_no' wx:else>领取现金红包</button>
+		</block>
+		<button wx:if='{{status<2}}' class='btn' catchtap='submitdingdan'>提交订单号</button>
+
+	</block>
+	<block wx:if='{{!btn_show}}'>
+		<button wx:if='{{status>=2}}' class='btn {{complete_bg_hui?"complete_bg_hui":""}}' catchtap='submit'>完成</button>
+		<button wx:if='{{status<2}}' class='btn' catchtap='submitdingdan'>提交订单号</button>
+	</block>
+	<!-- <copyRight></copyRight> -->
+
+
+	<view wx:if='{{showModal}}'>
+		<view class='mask_layer' bindtap='modal_click_Hidden' />
+		<view class='modal_box'>
+			<view class="title2">请填写腾讯云订单号</view>
+			<view class='content'>
+				<text class='modalMsg'></text>
+				<input class='input_show1' bindinput='changeCancelReason' auto-height value='{{modalMsg}}' bindfocus='bindfocus' bindblur='bindblur' placeholder='请输入订单号,例：202001301***'></input>
+			</view>
+			<view class='btn1'>
+				<view bindtap='modal_click_Hidden' class='cancel'>取消</view>
+				<view bindtap='Sure' class='Sure'>确定</view>
+			</view>
+		</view>
+	</view>
+</block>
+<view class=" bottomTxt">
+	<!-- <copyRight></copyRight> -->
+	<view catchtap="nav_aa" class="dianzizhuopai">咨询服务</view>
+	<view class="dianzizhuopai" catchtap="nav_electronicTable" wx:if='{{tableCardImg}}'>电子桌牌</view>
+	<view class="dianzizhuopai" catchtap="submitdingdan" wx:if='{{status==9}}'>续费</view>
+</view>

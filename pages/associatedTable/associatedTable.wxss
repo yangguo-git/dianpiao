@@ -1,0 +1,116 @@
+page{
+    background: #f4f5f8;
+}
+  .step-style{
+      color: #999999;
+      margin-bottom: 20rpx;
+  }
+  .grayColor{
+    color: #bfbfbf;
+    margin-bottom: 15rpx;
+  }
+  .order-style{
+    background-color: white;
+    margin-top: 15rpx;
+    border-radius: 5rpx;
+    padding: 20rpx 0rpx 20rpx 15rpx;
+  }
+  .top-part{
+    margin: 0rpx 15rpx 15rpx 15rpx;
+    padding-top: 25rpx;
+  }
+  .middle-part{
+    margin: 30rpx 15rpx 15rpx 15rpx;
+  }
+  .item-part{
+   display: flex;
+   padding: 30rpx 0rpx;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2rpx solid #f5f5f5;
+   margin: 0rpx 15rpx;
+  }
+  .item-part image{
+    width: 18rpx;
+    height: 28rpx;
+  }
+  .item-box{
+    margin-top: 25rpx;
+    background-color: white;
+    border-radius: 10rpx;
+  }
+  .btn-wrap{
+   margin: 30rpx 15rpx;
+   background-color: #657afa;
+   text-align: center;
+   color: white;
+   border-radius: 5rpx;
+   height: 85rpx;
+   line-height: 85rpx;
+  }
+  .cover-style{
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      height: 100%;
+      bottom: 0px;
+      z-index: 2;
+      width: 100%;
+  }
+  .alertBox{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 410rpx;
+    background-color: #f4f5f8;
+    left: 0;
+    width: 85%;
+    border-radius: 15rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .goodBtn{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 25rpx 0rpx;
+    box-sizing: border-box;
+    color: #6271f5;
+    border-radius: 15rpx;
+  }
+  .tip-text{
+    margin-top: 50rpx;
+  }
+  .input-part{
+    width: 90%;
+    text-align: center;
+    border-bottom: 2rpx solid #e8e8e8;
+   
+  }
+  .item-part .successImg{
+    width: 100%;
+    height: 300rpx;
+  }
+  .bottomPart{
+   background-color: white;
+   margin: 30rpx 15rpx 15rpx 15rpx;
+   border-radius: 10rpx;
+   padding: 20rpx 0rpx 20rpx 10rpx;
+  }
+  .telePart{
+     display: flex;
+     align-items: center;
+  }
+  .telePart input{
+    padding-left: 20rpx;
+  }
+  .lastPart{
+    border-bottom: none;
+  }
+  .alertInput{
+    margin-bottom: 15rpx;
+  }

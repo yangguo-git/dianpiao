@@ -1,0 +1,26 @@
+<!--pages/replace/replace.wxml-->
+<form bindsubmit="formSubmit" report-submit="true">
+  <button class='sweep_code_bg' formType="submit" id='1' catchtap='scanCode'>
+    <image class='sweep_code' src='/img/sweep_code.png'></image>
+    <view class='sweep_code_txt'>扫描 (新) 桌牌</view>
+  </button>
+
+  <button class='sweep_code_bg' formType="submit" id='2' catchtap='scanCode'>
+    <image class='sweep_code' src='/img/sweep_code.png'></image>
+    <view class='sweep_code_txt'>扫描 (旧) 桌牌</view>
+  </button>
+
+  <view class='code_block'>
+    <view class='flex_row bor_bottom'>
+      <view class='code_txt'>新桌牌码</view>
+      <input placeholder='请扫码识别桌牌码' disabled='{{true}}' value='{{code_1}}'></input>
+    </view>
+    <view class='flex_row bor_bottom2'>
+      <view class='code_txt'>旧桌牌码</view>
+      <input placeholder='请扫码识别桌牌码' disabled='{{true}}' value='{{code_2}}'></input>
+    </view>
+  </view>
+
+  <button class='replace_btn' style='background: {{code_1!=""&&code_2!=""?"#1AAD19":"#DCDCDC"}}' formType="submit" catchtap='changeTabelCard' type='primary'>更换桌牌</button>
+</form>
+        <copyRight></copyRight>

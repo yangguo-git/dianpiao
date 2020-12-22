@@ -1,0 +1,31 @@
+<!--pages/accountManager/submit_succ/submit_succ.wxml-->
+<form bindsubmit="formSubmit" report-submit="true">
+
+  <image class='bg' src='/img/redPacket1.png'></image>
+
+  <block wx:if='{{show_xibao&&show_xibao!="false"}}'>
+    <scroll-view scroll-y='{{false}}'>
+
+      <button class='btn_share' formType="submit" open-type="share">
+        <image class='share' src='/img/share.png'></image>
+      </button>
+      <view class='block'>
+        <view class='head'>
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class='txt1'>恭喜</view>
+        <view class='txt2'>{{managerName}}</view>
+        <view class='txt3'>{{orderNum}}
+          <text>单</text>
+        </view>
+        <view class='txt4'>{{productName}}</view>
+      </view>
+
+      <view catchtap='navigate' class='companey-phon2'>申请成为联通微信极速开票合伙人
+      </view>
+
+      <button catchtap='submit' formType="submit">完成</button>
+    </scroll-view>
+  </block>
+</form>
+        <copyRight></copyRight>

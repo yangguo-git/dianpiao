@@ -1,0 +1,8 @@
+<!--pages/contactPage/index.wxml-->
+<!-- <text>pages/contactPage/index.wxml</text> -->
+<view class='main'>
+  <image mode='widthFix' src="/img/contact.png"></image>
+  <view class='contact-me'>
+    <cell styleType="2" isMask="1" bind:completemessage="completemessage" plugid='5d8d7baebf3812e8067254ea4be42261'  />
+  </view>
+</view>

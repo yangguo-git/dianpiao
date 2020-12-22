@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/register/register",
+    "pages/thirdStep/thirdStep",
+    "pages/associatedTable/associatedTable",
+    "pages/packageChoice/packageChoice",
+    "pages/relation_from/relation_from",
+    "pages/upImg/upImg",
+    "pages/electronicTable/electronicTable",
+    "pages/replace/replace_scee",
+    "pages/replace/replace",
+    "pages/redPacket_succ/redPacket_succ",
+    "pages/accountList/accountList",
+    "pages/submit_succ/submit_succ",
+    "pages/contactPage/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6058fd",
+    "navigationBarTitleText": "电票微助手",
+    "navigationBarTextStyle": "white"
+  },
+  "plugins": {
+    "contactPlugin": {
+      "version": "1.0.12",
+      "provider": "wx104a1a20c3f81ec2"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxa64d8ad33773c1ab"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

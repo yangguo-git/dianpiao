@@ -1,0 +1,30 @@
+/* pages/electronicTable/electronicTable.wxss */
+.tableCardImage{
+  width: 70%;
+  border: 1px solid #f2f2f2;
+  margin-left: 15%;
+  margin-top: 40rpx;
+}
+.txt{
+  margin-top: 30rpx;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30rpx;
+  color: #999;
+}
+.btn{
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+/* yg添加 */
+.saveBtn{
+  background-color: #657afa;
+  width: 90%;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+}

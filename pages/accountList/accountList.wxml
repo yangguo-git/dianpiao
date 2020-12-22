@@ -1,0 +1,63 @@
+<!--pages/accountManager/accountList/accountList.wxml-->
+<scroll-view scroll-y>
+	<form bindsubmit="formSubmit" report-submit="true">
+		<button class='sweep_code_bg' catchtap='bind_table_card' formType="submit">
+			<image class='sweep_code' src='/img/scans.png'></image>
+			<view class='sweep_code_txt'>请点击以上图标绑定桌牌</view>
+		</button>
+
+		<view class='list'>
+			<!-- <view wx:if='{{showModalbtn}}' class='code_rl code_rlName' catchtap="showCancelOrder">实名认证</view>
+			<view wx:if='{{showModal}}'>
+				<view class='mask_layer' bindtap='modal_click_Hidden' />
+				<view class='modal_box'>
+					<view class="title">实名认证</view>
+					<view class='content'>
+						<text class='modalMsg'>姓名</text>
+						<input class='input_show1' bindinput='changename' value='{{name}}'></input>
+					</view>
+					<view class='content'>
+						<text class='modalMsg'>身份证</text>
+						<input class='input_show1' bindinput='changeidCard' value='{{idCard}}'></input>
+					</view>
+					<view class='modalMsg modalMsg2'>注： 请客户经理提交信息完成实名认证，以便后续自动发放销售佣金</view>
+					<view class='btn1'>
+						<view bindtap='modal_click_Hidden' class='cancel'>取消</view>
+						<view bindtap='Sure' class='Sure'>确定</view>
+					</view>
+				</view>
+			</view> -->
+
+			<!-- <navigator url='../replace/replace'>
+				<view class='code_rl'>桌牌更换</view>
+			</navigator> -->
+			<view class='list_title'>已绑定商户</view>
+			<!-- <image class='search_icon' src='/img/search.png'></image> -->
+
+			<!-- <input class='search' placeholder-class='p_search' confirm-type='search' bindconfirm='search' bindinput='input_search' placeholder='请输入商户名称'></input> -->
+
+            <!-- {{key == list.length -1 ? "hahh":"heiheo" }} 备用 -->
+			<view class='obj_list' wx:if='{{list.length>0}}'>
+				<block wx:for='{{list}}' wx:key='id'>
+					<view class='item_centent' catchtap='tap_order' data-item='{{item}}' id='{{item.id}}'>
+						<view class='num'>{{item.orderIndex}}</view>
+						<view class='status_0' wx:if='{{item.status==0||item.status==1||item.status==2}}'>未完成</view>
+						<!-- <view class='status_0' wx:if='{{item.status==0||item.status==1}}'>试用中</view> -->
+						<view class='status_0' wx:if='{{item.status==-1}}'>未绑定</view>
+						<view class='status_0' wx:if='{{item.status==-2}}'>已过期</view>
+						<view class='status_1' wx:if='{{item.status==9}}'>已完成</view>
+						<view>
+							<view class='name'>{{item.mchName}}</view>
+							<view class='time'>{{item.validStartTime}}</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		
+			<view wx:if='{{list.length==0}}'>
+				<image class='shop' mode='widthFix' src='/img/shop.svg'></image>
+			</view>
+		</view>
+	</form>
+<!-- <copyRight></copyRight> -->
+</scroll-view>

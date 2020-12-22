@@ -1,0 +1,10 @@
+<!--pages/replace/replace_scee.wxml-->
+<image src='/img/replace_scee.png'></image>
+<view class='txt1'>更换成功</view>
+
+<view class='txt2'>原桌牌ID：{{code_1}}</view>
+<view class='txt3'>新桌牌ID：{{code_2}}</view>
+
+
+<button class='btn' catchtap='submit'>完成</button>
+        <copyRight></copyRight>

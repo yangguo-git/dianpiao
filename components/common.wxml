@@ -1,0 +1,12 @@
+
+<view class='copy-right'>
+  <view class='companey-phone-tips'>
+    <navigator open-type='navigate' hover-class="none" url='/pages/contactPage/index'>
+      <view class='top'>
+        <!-- <image class='companey-logo' src='/img/people.png' mode='widthFix'></image> -->
+        <view class='companey-phon'>咨询服务</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+

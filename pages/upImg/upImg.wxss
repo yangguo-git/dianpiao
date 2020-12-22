@@ -1,0 +1,99 @@
+page {
+  font-size: 32rpx;
+  background: #f2f2f2;
+}
+
+.body {
+  width: 90%;
+  margin-left: 5%;
+  background: white;
+  padding-top: 60rpx;
+  padding-bottom: 60rpx;
+  margin-top: 20rpx;
+}
+
+.copy-right {
+  font-size: 26rpx;
+  color: #459ad6;
+  padding-top: 40rpx;
+  position: relative;
+  top: 10rpx;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+  width: 100%;
+}
+
+image {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.body2 {
+  width: 90%;
+  margin-left: 5%;
+  background: white;
+  padding-top: 30rpx;
+  margin-top: 60rpx;
+  padding-bottom: 30rpx;
+}
+
+.table_card {
+  background: white;
+  width: 94%;
+  position: relative;
+  left: 3%;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 52rpx;
+  border-radius: 10rpx;
+  /* border:1px dashed #666; */
+}
+
+.tip {
+  font-size: 28rpx;
+  margin-top: 50rpx;
+  margin-left: 5%;
+}
+
+.imgTxt {
+  text-align: center;
+  color: blue;
+  font-size: 28rpx;
+}
+
+.btn {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 80rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-bottom: 40rpx;
+}
+
+.left_inp_txt {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+}
+
+.left_inp_txt text {
+  line-height: 70rpx;
+  font-weight: 600;
+}
+
+.left_inp_txt input {
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}
+/* yg添加 */
+.cover-style{
+  background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    height: 100%;
+    bottom: 0px;
+    z-index: 2;
+    width: 100%;
+}

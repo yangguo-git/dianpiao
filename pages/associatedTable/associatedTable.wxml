@@ -1,0 +1,58 @@
+<view>
+    <view class="top-part">
+        <view class="step-style">第一步:提交沃云订单号</view>
+        <input placeholder='请输入沃云订单号' bindinput='name_input' value="{{inputValue}}" placeholder-class="grayColor" class="order-style"></input>
+    </view>
+    <view class="middle-part">
+        <view class="step-style">第二步:请点击上传以下三张照片</view>
+        <view class="item-box">
+            <view class="item-part" bindtap="upimg"  data-type='1'>
+                <text>增值税发票照片</text>
+                <image class='right' src='/img/right.png'></image>
+            </view>
+              <!-- 上传成功 -->
+            <view class="item-part" wx:if="{{invoiceUrl}}">
+                <image class='successImg' src='{{invoiceUrl}}'></image>
+            </view>
+
+            <view class="item-part" bindtap="upimg"  data-type='2'>
+                <text>税控盘正面照片</text>
+                <image class='right' src='/img/right.png' mode='widthFix'></image>
+            </view>
+            <!-- 上传成功 -->
+            <view class="item-part" wx:if="{{taxBoxFrontUrl}}">
+                <image class='successImg' src='{{taxBoxFrontUrl}}' mode='widthFix'></image>
+            </view>
+            <view class="item-part lastPart" bindtap="upimg"  data-type='3'>
+                <text>税控盘反面照片</text>
+                <image class='right' src='/img/right.png'></image>
+            </view>
+            <!-- 上传成功 -->
+            <view class="item-part" wx:if="{{taxBoxBackUrl}}">
+                <image class='successImg' src='{{taxBoxBackUrl}}' mode='widthFix'></image>
+            </view>
+        </view>
+    </view>
+    <!-- 商户电话 -->
+    <view class="bottomPart">
+        <view class="telePart">
+         <text>商户电话*</text>
+         <input placeholder="请输入商户联系方式" bindinput="phoneInput" placeholder-class="grayColor"></input>
+        </view>
+          
+    </view>
+      
+    <view class="btn-wrap" bindtap="guanlianEvent">
+        <view>关联桌牌</view>
+    </view>
+</view>
+<!-- 遮罩层 -->
+<view class="cover-style" wx:if="{{showCover}}" bindtap="hideCover"></view>
+<!-- 弹窗 -->
+<view class="alertBox" wx:if="{{showCover}}">
+    <view class="tip-text">请输入沃云订单号</view>
+    <view class="input-part">
+         <input placeholder='填写订单号' class="alertInput"  bindinput='changeCancelReason' placeholder-class="grayColor"></input>
+    </view>
+    <view class="goodBtn" bindtap="hideCover">好的</view>
+</view>

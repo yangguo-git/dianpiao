@@ -1,0 +1,45 @@
+<block>
+  <form bindsubmit="formSubmit" report-submit="true">
+    <!-- <image class='mini' src='/img/mini.png'></image>
+    <image class='download' src='/img/download.png'></image> -->
+    <!-- <view class='register'>客户经理注册</view> -->
+<view class="information-part">
+    <view class='item'>
+      <view class='item_txt manageName'><text class="firstName">姓</text><text>名</text></view>
+      <input placeholder='请输入姓名' bindinput='name_input' placeholder-class="grayColor"></input>
+    </view>
+    <view class='item'>
+      <view class='item_txt'>联系方式</view>
+      <input placeholder='请输入手机号码' value='{{phoneNumber}}' bindinput='phone_input'  placeholder-class="grayColor"></input>
+      <!-- <input placeholder='请获取手机号码' value='{{phoneNumber}}' disabled='true' placeholder-class="grayColor"></input> -->
+      <!-- <image class='right' src='/img/right.png'></image> -->
+      <!-- <button open-type="getPhoneNumber" formType="submit" bindgetphonenumber='getphonenumber'></button> -->
+    </view>
+    
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class='item manageArea'>
+      <view class='item_txt'>所在地区</view>
+      <input wx:if='{{multiIndex.length!=0}}' placeholder='请选择所在地区' placeholder-class="grayColor" value='{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}' disabled='true'></input>
+      <input wx:else placeholder='请选择所在地区'  disabled='true' placeholder-class="grayColor"></input>
+      <image class='right' src='/img/right.png'></image>
+     
+    </view>
+</picker>
+
+  
+</view>
+  
+    <button class='submit' formType="submit" catchtap='register'>客户经理注册</button>
+
+    <!-- <view class='coll' catchtap='1'>联系客服</view> -->
+
+    <view class="bg" bindtap='hideview' style='display:{{display}}'></view>
+    <view class="show" bindtap='hideview' style='display:{{display}}'>
+      <view class='title'>注册失败</view>
+      <view class='txt'>请确认所填信息是否正确，如无法注册请
+        <text class='coll_txt' catchtap='coll'>拨打客服</text>
+      </view>
+    </view>
+        <!-- <copyRight></copyRight> -->
+  </form>
+</block>

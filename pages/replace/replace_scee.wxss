@@ -1,0 +1,32 @@
+/* pages/replace/replace_scee.wxss */
+page{
+  text-align: center;
+}
+image{
+  height: 180rpx;
+  width: 180rpx;
+  margin-top: 180rpx;
+}
+.txt1{
+  margin-top: 80rpx;
+}
+.txt2{
+  margin-top: 40rpx;
+  color: #999;
+  font-size: 32rpx;
+}
+.txt3{
+  color: #999;
+  font-size: 32rpx;
+}
+.btn{
+  position: absolute;
+  height:80rpx;
+  line-height: 80rpx;
+  background: white;
+  color: #00CB4F;
+  width: 50%;
+  bottom: 250rpx;
+  margin-left: 25%;
+  border: 1px solid #00CB4F
+}

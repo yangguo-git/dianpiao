@@ -1,0 +1,42 @@
+page{
+    background: #f4f5f8;
+}
+  .step-style{
+      color: #999999;
+      margin-bottom: 20rpx;
+  }
+  .grayColor{
+    color: #bfbfbf;
+    margin-bottom: 15rpx;
+  }
+  .top-part{
+    margin: 0rpx 15rpx 15rpx 15rpx;
+    padding-top: 25rpx;
+  }
+  .middle-part{
+    margin: 30rpx 15rpx 15rpx 15rpx;
+  }
+  .btn-wrap{
+   margin: 30rpx 15rpx;
+   background-color: #657afa;
+   text-align: center;
+   color: white;
+   border-radius: 10rpx;
+   height: 85rpx;
+   line-height: 85rpx;
+  }
+  .showPart{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10rpx;
+      font-size: 30rpx;
+  }
+  .itemPart{
+      padding: 30rpx 20rpx;
+      border-bottom: 1rpx solid #e8e8e8;
+  }
+  .company{
+      margin-right: 30rpx;
+  }
+  

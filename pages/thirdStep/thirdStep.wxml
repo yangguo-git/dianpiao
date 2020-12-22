@@ -1,0 +1,22 @@
+<view>
+    <view class="top-part">
+        <view class="step-style">第三步:获取企业ID和注册码</view>
+        <view class="showPart">
+            <view class="title-text itemPart">{{mchName}}</view>
+            <view class="itemPart">
+                <text class="company">企业ID</text>
+                <text class="">{{companyId}}</text>
+            </view>
+            <view class="itemPart">
+                <text class="company">注册码</text>
+                <text class="">{{registerId}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="middle-part">
+        <view class="step-style">第四步:安装PC端软件并完成登录</view>
+    </view>
+    <view class="btn-wrap" bindtap="jumpPage">
+        <view>完成</view>
+    </view>
+</view>

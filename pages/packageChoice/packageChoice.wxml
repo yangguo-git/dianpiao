@@ -1,0 +1,32 @@
+<view class='table_card'>桌牌 {{tableCardCode}}</view>
+<view class="tip">请根据沃云T购买的产品规格进行选择:</view>
+<view class="body">
+  <view class="centent">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <view class="radioItem" wx:for-items="{{items}}" wx:key="index">
+        <radio class="radio" value="{{item.value}}" disabled='{{item.disabled}}' checked="{{item.checked}}">
+          <text>{{item.value}}</text>
+        </radio>
+        <view class="detail">{{item.detail}}</view>
+      </view>
+    </radio-group>
+  </view>
+</view>
+<button class="btn" type='primary' catchtap="showCancelOrder">确定</button>
+
+
+  <view wx:if='{{showModal}}'>
+    <view class='mask_layer' bindtap='modal_click_Hidden' />
+    <view class='modal_box'>
+      <view class="title2">请填写腾讯云订单号</view>
+      <view class='content'>
+        <text class='modalMsg'></text>
+        <input class='input_show1' bindinput='changeCancelReason' auto-height value='{{orderId}}' bindfocus='bindfocus' bindblur='bindblur' placeholder='请输入订单号,例：202001301***'></input>
+      </view>
+      <view class='btn1'>
+        <view bindtap='modal_click_Hidden' class='cancel'>取消</view>
+        <view bindtap='Sure' class='Sure'>确定</view>
+      </view>
+    </view>
+  </view>
+        <!-- <copyRight></copyRight> -->

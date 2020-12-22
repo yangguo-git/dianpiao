@@ -1,0 +1,112 @@
+
+page {
+  background: #f4f5f8;
+}
+.aaas{
+  top: 40rpx;
+  position: relative;
+}
+.table_card {
+  background: white;
+  width: 94%;
+  position: relative;
+  left: 3%;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 52rpx;
+  border-radius: 10rpx;
+  /* border:1px dashed #666; */
+}
+
+.input_txt2 {
+ position: relative;
+ top: 4rpx;
+}
+
+.title {
+  margin-top: 60rpx;
+  left: 3%;
+  position: relative;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.from {
+  position: relative;
+  width: 94%;
+  left: 3%;
+  border-radius: 10rpx;
+  background: white;
+  margin-top: 20rpx;
+}
+
+.input_txt {
+  line-height: 70rpx;
+  width: 160rpx;
+  margin-top: 4rpx;
+}
+
+.item {
+  padding-top: 20rpx;
+  height: 90rpx;
+  margin-left: 26rpx;
+  margin-right: 26rpx;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  flex-direction: row;
+  font-size: 32rpx;
+}
+
+.item_bottom {
+  /* padding-bottom: 20rpx; */
+  border-bottom: 1px solid #f2f2f2;
+  width: 74%;
+}
+
+.item .input {
+  margin-top: 20rpx;
+  width: 346rpx;
+  font-size: 30rpx;
+}
+
+textarea {
+  position: relative;
+  max-height: 120rpx;
+}
+
+.right_img {
+  width: 86rpx;
+  height: 115rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 76rpx;
+}
+
+.btn {
+  position: absolute;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #657afa;
+  color: white;
+  width: 90%;
+  bottom: 70rpx;
+  margin-left: 5%;
+}
+
+.bottom_txt2 {
+  position: relative;
+}
+
+.copy-right {
+  font-size: 26rpx;
+  color: #459ad6;
+  padding-top: 40rpx;
+  top: 30rpx;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 30rpx;
+  width: 100%;
+}

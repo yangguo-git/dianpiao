@@ -1,0 +1,176 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.13.0",
+  "appid": "wxd18f3f2141fe40ed",
+  "projectname": "%E5%BE%AE%E4%BF%A1%E6%80%A5%E9%80%9F%E5%BC%80%E7%A5%A8%E4%BA%91%E5%8A%A9%E6%89%8B",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "注册",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "关联表单提交",
+          "pathName": "pages/relation_from/relation_from",
+          "query": "tableCardCode=\"TW1232aaa14\"",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "表单提交成功",
+          "pathName": "pages/submit_succ/submit_succ",
+          "query": "id=06b6723431ad49e3844e3a51766c4120",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "商户列表",
+          "pathName": "pages/accountList/accountList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "领取红包成功",
+          "pathName": "pages/redPacket_succ/redPacket_succ",
+          "query": "show_xibao=true&status=2",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "替换桌牌",
+          "pathName": "pages/replace/replace",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/submit_succ/submit_succ",
+          "pathName": "pages/submit_succ/submit_succ",
+          "query": "id=IF2007291538301358",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/submit_succ/submit_succ",
+          "pathName": "pages/submit_succ/submit_succ",
+          "query": "id=IF1907051125525728",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/accountList/accountList",
+          "pathName": "pages/accountList/accountList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 9,
+          "name": "pages/packageChoice/packageChoice",
+          "pathName": "pages/packageChoice/packageChoice",
+          "query": "tableCardCode=WP29018952&proStatus1=1&proStatus2=1&proStatus3=1",
+          "scene": null
+        },
+        {
+          "id": 10,
+          "name": "pages/upImg/upImg",
+          "pathName": "pages/upImg/upImg",
+          "query": "tableCardCode=WP29018950&orderId=2019070810025",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/relation_from/relation_from",
+          "pathName": "pages/relation_from/relation_from",
+          "query": "tableCardCode=WP29018954",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/upImg/upImg",
+          "pathName": "pages/upImg/upImg",
+          "query": "tableCardCode=WP29018954&orderId=2019070810034",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/submit_succ/submit_succ",
+          "pathName": "pages/submit_succ/submit_succ",
+          "query": "id=IF2003111751114038",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/electronicTable/electronicTable",
+          "pathName": "pages/electronicTable/electronicTable",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

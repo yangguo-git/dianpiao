@@ -1,0 +1,253 @@
+/* pages/accountManager/accountList/accountList.wxss */
+@import '../register/register';
+page{
+  background: #f4f5f8;
+}
+
+.copy-right{
+  font-size: 26rpx;
+  color: #459ad6;
+  padding-top: 40rpx;
+  position: relative;
+  bottom: 0rpx;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+  width: 100%;
+}
+.mask_layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+left:0;top:0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.modal_box {
+  width: 76%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 12% 0 12%;
+  border-radius: 3px;
+}
+ 
+.title {
+  padding: 15px;
+  text-align: center;
+  background-color: gazure;
+}
+ 
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45rpx;
+
+}
+ 
+.modalMsg {
+  width: 100rpx;
+  margin-left: 40rpx;
+  color: #666;
+}
+.modalMsg2{
+  width: 88%;
+  font-size:28rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+}
+ .input_show1{
+   border-bottom: 1px solid #d0d0d0;
+   width: 360rpx;
+   font-size: 32rpx;
+   position: relative;
+   bottom: 10rpx;
+ }
+.btn1 {
+  width: 100%;
+  margin-top: 65rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+}
+ 
+.cancel {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+ 
+.Sure {
+  width: 100%;
+  padding: 10px;
+  color: #44b549;
+  background-color: white;
+  border-left: 1px solid #d0d0d0;
+  text-align: center;
+}
+ 
+.sweep_code_bg{
+  padding: none;
+  margin: none;
+  line-height:1.5;
+  background: none;
+  text-align: left;
+}
+.sweep_code_bg::after {
+  border: none;
+}
+.code_rl{
+  position: absolute;
+  right: 60rpx;
+  color: #7A92C2;
+  font-size: 30rpx;
+
+}
+.code_rlName{
+  right: 220rpx;
+}
+.list{
+  /* margin-left: 5%; */
+  /* width: 100%; */
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 150rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+.search_icon{
+  position: absolute;
+  right: 86rpx;
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 56rpx;
+}
+.search{
+  background: white;
+  margin: 0;
+  padding-left: 3%;
+  margin-top: 30rpx;
+  height: 84rpx;
+  border-radius: 10rpx;
+  width: 86%;
+}
+.p_search{
+  margin-left:12rpx;
+}
+.list_title{
+  margin-top: 30rpx;
+  text-align: left;
+  color: #7b7b7b;
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  padding: 20rpx;
+}
+.obj_list{
+  /* margin-left: -2%; */
+  margin-top: 40rpx;
+  /* width: 94%; */
+  border-radius: 10rpx;
+}
+.item_centent{
+  background: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  position: relative;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.num{
+  color: white;
+  background: #657afa;
+  border-radius: 50%;
+  height: 55rpx;
+  width: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  margin: 50rpx 30rpx 50rpx 20rpx;
+}
+.status_0{
+  position: absolute;
+  top: 50%;
+  height: 50rpx;
+  margin-top: -20rpx;
+  right: 30rpx;
+  color:  #666;
+}
+.status_1{
+  position: absolute;
+  top: 50%;
+  height: 50rpx;
+  margin-top: -20rpx;
+  right: 30rpx;
+  color:  #00CB4F;
+}
+.name{
+  font-size: 32rpx;
+  width: 440rpx;
+  margin-top: 24rpx;
+}
+.time{
+  font-size: 28rpx;
+  margin-top: 14rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+.sweep_code{
+  width: 140rpx;
+  height: 140rpx;
+  position: relative;
+  left: 50%;
+  margin-left: -70rpx;
+  margin-top: 140rpx;
+}
+.sweep_code_txt{
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #cdcdcf;
+}
+
+.txt_item{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.txt_1{
+  color: #999;
+  margin-top: 140rpx;
+  font-size: 40rpx
+  
+}
+.txt_2{
+  color: #999;
+  margin-top: 40rpx;
+  font-size: 32rpx
+  
+}
+
+.submit{
+  margin-top: 160rpx;
+}
+
+.shop{
+  width: 200rpx;
+  min-height: 180rpx;
+  margin-left: -110rpx;
+  position: relative;
+  left: 50%;
+  margin-top: 120rpx;
+}
+/* yg添加 */
+.listPart{
+  background-color: white;
+}

@@ -1,0 +1,60 @@
+<scroll-view scroll-x='{{false}}'>
+  <form bindsubmit="formSubmit" report-submit="true">
+    <view class='table_card'>桌牌 {{tableCardCode}}</view>
+    <view class='title'>以下信息通过营业执照识别</view>
+    <view class='from'>
+      <image class='right_img' catchtap='openScanCode' src='/img/relation.png'></image>
+      <view class='item item_bottom'>
+        <view class='input_txt'>
+          <text decode="{{true}}">名&nbsp;&nbsp;&nbsp;称</text>
+        </view>
+        <input class='input' disabled='{{disabled}}' placeholder='请输入商户营业执照名称' bindblur='input_name' value='{{name}}'></input>
+      </view>
+      <view class='item'>
+        <view class='input_txt'>
+          <text decode="{{true}}">税&nbsp;&nbsp;&nbsp;号</text>
+        </view>
+        <input class='input' disabled='{{disabled}}' placeholder='请输入商户营业执照税号' bindblur='input_mchRegisNo' value='{{mchRegisNo}}'></input>
+      </view>
+      <!-- <view class='item'>
+      <view class='input_txt'>类型</view>
+      <input placeholder='其它有限责任公司' disabled='{{disabled}}' bindblur='input_companyType' value='{{companyType}}'></input>
+    </view> -->
+      <view class='item'>
+        <view class='input_txt'>负责人</view>
+        <input class='input' disabled='{{disabled}}' style='width: 396rpx;' placeholder='请输入商户营业执照负责人' bindblur='input_legalRepre' value='{{legalRepre}}'></input>
+      </view>
+      <view class='item' style='border-bottom: none;margin-bottom: 20rpx;'>
+        <view class='input_txt'>
+          <text decode="{{true}}">住&nbsp;&nbsp;&nbsp;所</text>
+        </view>
+        <textarea class='input' style='top: {{topheight}}rpx;width: 500rpx;' placeholder='请输入商户住所详细地址' bindblur='input_mchAddress' value='{{mchAddress}}'></textarea>
+      </view>
+      <view style='height:60rpx;'></view>
+      <!-- <view class='item'>
+      <view class='input_txt'>注册资本</view>
+      <input placeholder='多少元' bindblur='input_regisCapital' value='{{regisCapital}}'></input>
+    </view> -->
+      <!-- <view class='item'>
+      <view class='input_txt'>成立日期</view>
+      <input placeholder='成立日期' bindblur='input_startTime' value='{{startTime}}'></input>
+    </view> -->
+      <!-- <view class='item' style='border-bottom: none;'>
+      <view class='input_txt'>营业期限</view>
+      <input placeholder='营业期限' bindblur='input_busnissTerm' value='{{busnissTerm}}'></input>
+    </view> -->
+    </view>
+    <view class='from' style='z-index:999; margin-top: 40rpx;'>
+      <view class='item' style='border-bottom: none;padding: 22rpx 0 10rpx 0;'>
+        <view class='input_txt input_txt2'>商户电话*</view>
+        <input class='input' disabled='{{disabled}}' placeholder='请输入商户联系方式' type='number' bindblur='input_phoneNamber' value='{{phoneNamber}}'></input>
+      </view>
+    </view>
+
+
+    <button class='btn' wx:if='{{btn_click}}' formType="submit" catchtap='addMchInfoForManager'>关联桌牌</button>
+    <button class='btn' style='background: #d0d0d0;' wx:if='{{!btn_click}}' formType="submit" >关联桌牌</button>
+    <!-- <copyRight></copyRight> -->
+  </form>
+</scroll-view>
+      <copyRight></copyRight>

@@ -1,0 +1,7 @@
+<!--pages/electronicTable/electronicTable.wxml-->
+<image class="tableCardImage" mode="widthFix" src="{{tableCardImage}}"></image>
+<view class="txt">桌牌申请后24小时内有效，请尽快完成绑定流程，并将桌牌保存至相册并发送给商户，</view>
+<view class="txt">电子桌牌可以打印制作实体桌牌或在手机、电脑等方式向消费者展示，使用更加灵活便利</view>
+<view class="btn" catchtap="saveImg">
+   <view class="saveBtn">保存桌牌</view>
+</view>
